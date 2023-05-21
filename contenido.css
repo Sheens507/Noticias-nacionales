@@ -1,0 +1,259 @@
+/*genera la caja automatica de home*/
+.carrusel-elemento h2{
+    text-align: center;
+}
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    height: 10px;
+    width: 300%;
+    
+}
+
+#carrusel-contenido {
+    /*edita la caja del carrusel de home*/
+    margin: 5rem;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgb(145, 110, 250);
+    border-radius: 10px;
+}
+
+.carrusel-elemento img{
+    /*modifica el tamaño de las imagenes del carrusel*/
+    height: auto;
+    width: 100%;
+    
+}
+
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+/*Esta parte es la de deporte y los pocoton de grid*/
+video{
+    width: 25vw;
+    height: auto;
+    transform: translateY(8%);
+    border-radius: 10px;
+}
+
+video.bajalo{
+    transform: translateY(150%);/*baja el elemento de por proporcion a la caja*/
+}
+
+#con_r_d_u{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+#con_r_u_u{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+#con_l{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px rgb(145, 110, 250);
+    border-radius: 10px;
+}
+
+#con_r_d{
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 0px 10px rgb(145, 110, 250);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#con_r_u{
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 0px 10px rgb(145, 110, 250);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#con_l_r{
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+}
+
+#con_r{
+    margin: 1rem;
+}
+
+#contenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}
+
+.con_l_l{
+    margin: 0.5rem;
+    border-top-left-radius: 10px; /* Redondea la esquina superior izquierda */
+    border-bottom-left-radius: 10px; /* Redondea la esquina inferior izquierda */
+}
+
+.con_l_r_u{
+    margin: 0.5rem;
+}
+
+.con_l_r_d{
+    margin: 0.5rem;
+}
+
+.con_r_u_u_l{
+    margin: 0.5rem;
+}
+
+.con_r_u_u_r{
+    margin: 0.5rem;
+}
+
+.con_r_u_d{
+    margin: 0.5rem;
+}
+
+.con_r_d_u_l{
+    margin: 0.5rem;
+}
+
+.con_r_d_u_r{
+    margin: 0.5rem;
+}
+
+.con_r_d_d{
+    margin: 0.5rem;
+}
+
+/*esta parte edita el area de internacional*/
+.internacional img{
+    width: 30vw;
+    height: auto;
+}
+
+#contenedor_inter{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.internacional{
+    margin: 0.7rem;
+    box-shadow: 0px 0px 10px rgb(145, 110, 250);/*genera una sobra alrededor del elemento*/
+    border-radius: 10px;
+}
+
+.internacional .cosas{
+    margin: 0.5rem;
+}
+
+/*esta parte edita el area de los que hicimos toda esta demencia en una sentada*/
+a.cosas:hover{
+    text-shadow: 0 0 8px #1ef376; /* Crea una sombra blanca alrededor del texto */
+}
+
+.participantes{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+}
+
+.info_par{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guapo{
+    width: 200px;
+}
+
+.guapa{
+    width: 357px;
+}

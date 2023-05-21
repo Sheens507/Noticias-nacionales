@@ -1,0 +1,153 @@
+
+body, html { /*para que las cosas lleguen al limite de la pantalla*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #5f4aa3;
+    margin-bottom: 0;
+    
+}
+
+/*Edicion en todos los header*/
+#banner{
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; /* Para que la sombra sea relativa al contenedor */
+}
+
+#banner::before{
+    content: ""; /* Se necesita contenido para crear el pseudo-elemento */
+    top: 0;
+    position: absolute; /* Posiciona el pseudo-elemento en relación al contenedor */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #755bc962; /* Color de fondo del pseudo-elemento (sombra) */
+    box-shadow: 0 0 10px #5f4aa3; /* Crea la sombra blanca */
+    z-index: -1; /* Mueve la sombra detrás de la imagen */
+}
+
+#banner img{ /*modifica el tamaño del logo*/
+    width: 15vw;
+    height: auto;
+}
+
+#banner img:hover{ /*modifica el tamaño del logo*/
+    background-color: #a399c762;
+    box-shadow: 0 0 10px #a399c762;
+}
+
+/*Edicion en todas las barras de navegación*/
+#navegacion{ 
+    background-color: #1ef376;
+    /*esta seccion hace ver la navegacion horizontal*/
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.nav_items{/*centra el texto de la barar de navegacion*/
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.nav_items a{
+    /*edita los elementos 'a' del barra de navegacion*/
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav_imhere{/*esta parte afecta a la opcion en la que estamos*/
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #5f4aa3;
+    border-top: 0.1rem solid #1ef376; /* Establece un borde superior de 2 píxeles de ancho y color rojo (#FF0000) */
+    border-top-left-radius: 0.5rem; /* Redondea la esquina superior izquierda del borde */
+    border-top-right-radius: 0.5rem; /* Redondea la esquina superior derecha del borde */
+    font-size: 1.5em;
+}
+
+.nav_imhere a{/*edita los elementos 'a' de la opcion en la que estamos*/
+    color: #1ef376; 
+    font-weight: bold;
+}
+
+/*Edicion en todos los footer*/
+footer{
+    background-color: #100d23;
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr;
+    color: #1ef376;
+}
+
+#footer_left{
+    padding-left: 3rem; 
+}
+
+#footer_left a{
+    color: #1ef376;
+    font-weight: bold;
+}
+
+#footer_center{
+    border-left: 1rem solid #5f4aa3; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.INFO{
+    text-align: center; 
+    justify-content: center;
+    transform: translateY(30%); /* Baja el texto al X% de la altura de la caja */
+}
+
+
+#footer_right{
+    border-left: 1rem solid #5f4aa3; /* Establece un borde superior de 2 píxeles de ancho y color rojo (#FF0000) */
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    padding-left: 3rem; /* Establece un espacio de 10 píxeles entre los elementos y el borde */
+}
+
+#footer_right img:hover{
+    border-radius: 10px;
+    background-color: #755bc962;
+    box-shadow: 0 0 10px #5f4aa3
+    
+}
+
+#footer_left a:hover{
+    text-shadow: 0 0 8px #5f4aa3
+    
+}
+
+.DOWN img{
+    width: 3vw;
+}
+
+/*Edicion en todos las etiquetas a generales*/
+a{
+    color: #100d23; /* Color de texto inicial */
+    transition: color 0.2s; /* Transición suave de 0.3 segundos para el cambio de color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-shadow: 0 0 8px rgb(0, 0, 0); /* Crea una sombra blanca alrededor del texto */
+    font-weight: bold;
+}
+
+.nav_imhere a:hover{
+    text-shadow: 0 0 8px rgb(255, 255, 255); /* Crea una sombra blanca alrededor del texto */
+    font-weight: bold;
+}
+
